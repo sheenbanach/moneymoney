@@ -11,36 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price %>
-  </div>
-
-  <div class="field">
-    <%= form.label :item %>
-    <%= form.text_field :item %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.text_area :category %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+<div class="form-group">
+     <label for="item_品目">品目</label>
+     <input type="text" class="form-control" name="item[item]" id="item_item">
+   </div>
+   
+   
+  <div class="form-group">
+    <label for="item_購入金額">購入金額</label>
+    <input type="number" class="form-control" name="item[price]" id="item_price">
   </div>
   
-    <div class="field">
-    <%= form.label :comment %>
-    <%= form.text_field :comment %>
-  </div>
-  
-  <div class="field">
-    <%= form.label :check %>
-    <%= form.check_box :check %>
-  </div>
 
+    <div class="form-group">
+ <label for="item_コメント">コメント</label>
+ <textarea class="form-control" rows="5" name="item[comment]" id="item_comment"></textarea>
+</div> 
+
+<div class="form-group">
+     <label for="item_カテゴリー">カテゴリー</label>
+     <input type="text" class="form-control" name="item[category]" id="item_category">
+   </div>
+  
   <div class="actions">
     <%= form.submit %>
   </div>
